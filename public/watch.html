@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<video
+id="player"
+controls
+width="800">
+</video>
+
+<script>
+
+const params =
+new URLSearchParams(location.search);
+
+const video =
+params.get("video");
+
+document.getElementById("player").src =
+"/uploads/" + video;
+
+</script>
+
+</body>
+</html>
